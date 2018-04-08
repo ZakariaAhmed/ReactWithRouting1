@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const Details = ({match}) => (
     <div>
-      <h2>{data.users[match.params.index].first + " " + data.users[match.params.index].last}</h2>
+      <h2>{data.users[match.params.index].first+" "+data.users[match.params.index].last}</h2>
       <table className="table">
         <tbody>
           <tr>
@@ -40,7 +40,7 @@ const Details = ({match}) => (
           </tr>
         </tbody>
       </table>
-      <p><Link to="/all">Back</Link></p>
+      <Link to="/all">back to all users</Link>
     </div>
   )
 
